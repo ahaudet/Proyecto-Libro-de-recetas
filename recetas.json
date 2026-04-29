@@ -1,22 +1,21 @@
-{
-  "id": "1714400000004",
-  "title": "Hummus de Aguacate y Cilantro",
-  "category": "Entradas, Dips",
-  "prepTime": "15 min",
-  "cookTime": "0 min",
-  "totalTime": "15 min",
-  "ingredients": [
-    "1 lata (400g) de Garbanzos cocidos (enjuagados y escurridos)",
-    "1 Aguacate (palta) grande y maduro",
-    "1/2 taza de Cilantro fresco (hojas y tallos tiernos)",
-    "1/4 taza de Jugo de Lima fresco",
-    "2 cucharadas de Aceite de Oliva virgen extra",
-    "1 diente de Ajo",
-    "1/2 cucharadita de Comino molido",
-    "1/2 cucharadita de Sal fina",
-    "Pimienta negra recién molida",
-    "Opcional: Copos de chile rojo para decorar"
-  ],
-  "instructions": "1. Introducir los garbanzos, la pulpa del aguacate, el cilantro, el jugo de lima, el aceite, el ajo y las especias en el procesador de alimentos.\n2. Procesar a alta velocidad durante 2 minutos hasta obtener una mezcla homogénea y sedosa.\n3. Si la viscosidad es muy alta, añadir una cucharadita de agua o aceite adicional hasta lograr la reología deseada.\n4. Rectificar sazón (sal y pimienta).\n5. Servir inmediatamente para evitar la oxidación del aguacate, decorando con aceite de oliva y copos de chile.",
-  "authorComments": "El ácido de la lima no solo aporta sabor, sino que actúa como antioxidante para mantener el color verde brillante de la clorofila y los lípidos de la palta."
-}
+[
+  {
+    "id": "1714400000005",
+    "title": "Hummus de Aguacate y Cilantro",
+    "category": "Dips, Árabe",
+    "ingredients": [
+      "300g de Garbanzos cocidos",
+      "8 cucharadas de Tahini (120g)",
+      "Jugo de 2 limones (60-80 ml)",
+      "3 dientes de Ajo",
+      "2 cucharaditas de Sal (10-12g)",
+      "5 cubos de Hielo",
+      "3 cucharadas de Aceite de Oliva (45 ml)",
+      "3-5 cucharadas de Agua de cocción",
+      "1 Aguacate grande maduro",
+      "1 puñado de Cilantro fresco"
+    ],
+    "instructions": "1. Procesar garbanzos, ajo, tahini, limón, sal, aceite y agua de cocción.\n2. Sumar aguacate, cilantro y hielos.\n3. Procesar hasta lograr una emulsión cremosa y brillante.\n4. Ajustar densidad con más agua si es necesario.",
+    "authorComments": "El hielo mantiene la clorofila del cilantro y la palta brillante."
+  }
+]
