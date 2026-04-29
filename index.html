@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<link rel="icon" type="image/png" href="logo.png">
-<link rel="apple-touch-icon" href="logo.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mis Recetas - Alejandro Haudet</title>
@@ -12,7 +9,6 @@
     body, html { margin: 0; padding: 0; width: 100%; height: 100%; font-family: Arial, sans-serif; background-color: #fffaf0; color: #333; }
     #view-home { position: fixed; inset: 0; background-image: url('https://images.unsplash.com/photo-1543353071-873f17a7a088?q=80&w=2070&auto-format&fit=crop'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 100; text-align: center; }
     
-    /* Contador discreto */
     #recipe-counter { position: absolute; top: 20px; right: 20px; font-size: 0.9rem; color: #c0392b; background: rgba(255,255,255,0.6); padding: 5px 12px; border-radius: 15px; font-weight: bold; }
 
     #view-home h1 { font-size: 3.5rem; color: #c0392b; margin-bottom: 0.2rem; text-shadow: 1px 1px 3px rgba(255,255,255,0.8); }
@@ -74,11 +70,33 @@
     </div>
 
 <script>
-    let recipes = JSON.parse(localStorage.getItem('recipes')) || [];
+    let recipes = [];
     let currentEditId = null;
 
+    async function loadData() {
+        try {
+            const response = await fetch('recetas.json');
+            let externalData = [];
+            if (response.ok) {
+                externalData = await response.json();
+            }
+            const localData = JSON.parse(localStorage.getItem('recipes')) || [];
+            const map = new Map();
+            [...externalData, ...localData].forEach(r => {
+                if(r.id) map.set(String(r.id), r);
+            });
+            recipes = Array.from(map.values());
+        } catch (e) {
+            recipes = JSON.parse(localStorage.getItem('recipes')) || [];
+        } finally {
+            renderCategories();
+            updateCounter();
+        }
+    }
+
     function updateCounter() {
-        document.getElementById('recipe-counter').textContent = "Recetas: " + recipes.length;
+        const counterEl = document.getElementById('recipe-counter');
+        if(counterEl) counterEl.textContent = "Recetas: " + recipes.length;
     }
 
     window.showHome = function() {
@@ -92,13 +110,10 @@
         document.getElementById('view-list').style.display = 'block';
         const res = document.getElementById('recipe-results');
         res.innerHTML = `<h2>Categoría: ${cat}</h2>`;
-
         const filtered = (cat === 'Todas') ? recipes : recipes.filter(r => r.category && r.category.includes(cat));
-        
         filtered.forEach(r => {
             const ing = Array.isArray(r.ingredients) ? r.ingredients : (r.ingredients ? r.ingredients.split(',') : []);
             const ingHtml = ing.map(i => `<li>${i.trim()}</li>`).join('');
-
             res.insertAdjacentHTML('beforeend', `
                 <article class="recipe-card">
                     <h2 class="recipe-title">${r.title}</h2>
@@ -150,7 +165,7 @@
             document.getElementById('f-ing').value = Array.isArray(data.ingredients) ? data.ingredients.join(', ') : (data.ingredients || "");
             document.getElementById('f-ins').value = data.instructions || "";
             document.getElementById('f-com').value = data.authorComments || "";
-            alert("✅ Cargado.");
+            alert("✅ Datos cargados.");
         } catch(e) { alert("❌ JSON inválido."); }
     };
 
@@ -164,7 +179,6 @@
             instructions: document.getElementById('f-ins').value,
             authorComments: document.getElementById('f-com').value
         };
-
         if(currentEditId) {
             const idx = recipes.findIndex(r => String(r.id) === String(currentEditId));
             if(idx > -1) recipes[idx] = rData;
@@ -191,6 +205,7 @@
         const cats = new Set(['Todas']);
         recipes.forEach(r => r.category && r.category.split(',').forEach(c => cats.add(c.trim())));
         const container = document.getElementById('pills-container');
+        if(!container) return;
         container.innerHTML = '';
         cats.forEach(c => {
             const b = document.createElement('button');
@@ -201,8 +216,7 @@
         });
     }
 
-    renderCategories();
-    updateCounter();
+    loadData();
 </script>
 </body>
 </html>
