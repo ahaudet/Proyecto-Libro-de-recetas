@@ -1,13 +1,14 @@
 [
   {
-    "id": "1",
-    "title": "Receta de Prueba",
-    "category": "General",
+    "id": "1714400000000",
+    "title": "Configuración Inicial",
+    "category": "Sistema",
     "ingredients": [
-      "Ingrediente 1",
-      "Ingrediente 2"
+      "Archivo index.html actualizado",
+      "Archivo recetas.json creado",
+      "Conexión fetch activa"
     ],
-    "instructions": "Paso 1: Mezclar.\nPaso 2: Cocinar.",
-    "authorComments": "Receta inicial para validar el despliegue en GitHub."
+    "instructions": "1. Verificar que el contador de recetas suba a 1.\n2. Navegar por las categorías para asegurar el renderizado.",
+    "authorComments": "Sistema listo para recibir recetas vía Gemini."
   }
 ]
