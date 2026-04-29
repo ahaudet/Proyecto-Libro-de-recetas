@@ -1,14 +1,22 @@
-[
-  {
-    "id": "1714400000000",
-    "title": "Configuración Inicial",
-    "category": "Sistema",
-    "ingredients": [
-      "Archivo index.html actualizado",
-      "Archivo recetas.json creado",
-      "Conexión fetch activa"
-    ],
-    "instructions": "1. Verificar que el contador de recetas suba a 1.\n2. Navegar por las categorías para asegurar el renderizado.",
-    "authorComments": "Sistema listo para recibir recetas vía Gemini."
-  }
-]
+{
+  "id": "1714400000003",
+  "title": "Hummus Clásico con Za'atar",
+  "category": "Entradas, Árabe",
+  "prepTime": "15 min",
+  "cookTime": "0 min",
+  "totalTime": "15 min",
+  "ingredients": [
+    "2 tazas de Garbanzos cocidos (bien escurridos)",
+    "1/3 taza de Tahina (pasta de sésamo)",
+    "1/4 taza de Jugo de Limón fresco",
+    "1 diente de Ajo pequeño (picado)",
+    "3 cucharadas de Aceite de Oliva virgen extra",
+    "1/2 cucharadita de Comino molido",
+    "Sal a gusto",
+    "2-3 cucharadas de Agua fría (para ajustar textura)",
+    "Za'atar para decorar",
+    "Pimentón dulce (opcional)"
+  ],
+  "instructions": "1. Procesar los garbanzos con el jugo de limón, la tahina, el ajo picado, el aceite de oliva, el comino y la sal hasta obtener una pasta gruesa.\n2. Con la procesadora en marcha, añadir el agua fría cucharada a cucharada hasta lograr una emulsión suave y cremosa.\n3. Probar y ajustar el punto de sal y acidez si fuera necesario.\n4. Servir en un bol, crear un surco circular con la cuchara y verter un hilo de aceite de oliva.\n5. Espolvorear generosamente con Za'atar y una pizca de pimentón.",
+  "authorComments": "Para una textura ultra profesional, se recomienda pelar los garbanzos o procesarlos mientras están ligeramente tibios."
+}
