@@ -1,0 +1,13 @@
+[
+  {
+    "id": "1",
+    "title": "Receta de Prueba",
+    "category": "General",
+    "ingredients": [
+      "Ingrediente 1",
+      "Ingrediente 2"
+    ],
+    "instructions": "Paso 1: Mezclar.\nPaso 2: Cocinar.",
+    "authorComments": "Receta inicial para validar el despliegue en GitHub."
+  }
+]
