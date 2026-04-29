@@ -1,0 +1,14 @@
+[
+  {
+    "id": "spice_anis_estrellado",
+    "title": "Anís Estrellado",
+    "flag": "🇨🇳",
+    "category": "aromatico",
+    "introduction": "Fruto del Illicium verum, valorado por su alto contenido en anetol.",
+    "sections": [
+      { "title": "Origen y Geografía", "content": "Nativo del suroeste de China y el norte de Vietnam." },
+      { "title": "Perfil Sensorial y Químico", "content": "Sabor dulce y licoroso. Contiene ácido shikímico." },
+      { "title": "Aplicación Técnica", "content": "Indispensable en caldos largos." }
+    ]
+  }
+]
