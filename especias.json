@@ -589,4 +589,16 @@
     ]
   }
 ]
+{
+  "id": "spice_locoto",
+  "title": "Locoto / Rocoto",
+  "flag": "🇧🇴",
+  "category": "picante",
+  "introduction": "Fruto del Capsicum pubescens, conocido por su picor intenso y sus semillas negras únicas.",
+  "sections": [
+    { "title": "Origen y Geografía", "content": "Nativo de las regiones andinas de Bolivia y Perú." },
+    { "title": "Perfil Sensorial", "content": "Picor punzante y fresco con notas frutales, muy superior al ají común." },
+    { "title": "Usos comunes", "content": "Fundamental en la salsa Yasgua de tus empanadas de osobuco." }
+  ]
+}
 ]
