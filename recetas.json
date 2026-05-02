@@ -1,44 +1,19 @@
 [
   {
-    "id": "receta_1",
-    "title": "Empanadas de osobuco braseado",
-    "category": "Entrante",
-    "prepTime": "180 minutos",
-    "cookTime": "20 minutos",
-    "totalTime": "200 minutos",
-    "ingredients": [
-      "1 Kg de osobuco",
-      "8 cebollas",
-      "1 pimiento rojo mediano",
-      "Parte verde del verdeo c/n",
-      "Para la salsa yasgua:",
-      "2 tomates perita",
-      "Ají locoto a gusto",
-      "Vinagre 2 cucharadas",
-      "Sal e aceite de oliva a gusto"
-    ],
-    "instructions": "Salpimentar el osobuco y dorar en la olla. Agregar 3 cebollas en mitades y c/n de agua. Llevar a hervor por 3 horas aprox... (hasta terminar)",
-    "authorComments": "Comer agregando la yasgua o con jugo de limón quedan muy bien también."
-  },
-  {
-    "id": "receta_2",
-    "title": "Alejandro's Pizza",
+    "id": "1714670000000",
+    "title": "Receta de Prueba Técnica",
     "category": "Plato Principal",
-    "prepTime": "20 minutos",
-    "cookTime": "10 minutos",
-    "totalTime": "30 minutos",
+    "prepTime": "15 minutos",
+    "cookTime": "20 minutos",
+    "totalTime": "35 minutos",
     "ingredients": [
-      "Prepizza",
-      "Salsa para pizza c/n",
-      "Queso mozzarella 200 g",
-      "Jamón crudo 100 g",
-      "Cebollas de verdeo c/n",
-      "Pimiento amarillo, verde y rojo 1/4 de c/u",
-      "Tomate redondo 1",
-      "Sal especiada",
-      "Mix de pimientas y provenzal c/n"
+      "500 g de ingrediente principal",
+      "100 ml de líquido de cobertura",
+      "10 g de sal fina",
+      "1 cdta. de Merkén",
+      "1 cdta. de Shichimi Togarashi"
     ],
-    "instructions": "Cortar las cebollas de verdeo en cuartos y picar finamente... (hasta terminar)",
-    "authorComments": ""
+    "instructions": "1. Precalentar a 180°C.\n2. Mezclar los componentes secos.\n3. Incorporar los líquidos lentamente hasta homogeneizar.\n4. Cocinar durante 20 minutos.",
+    "authorComments": "Optimizado para una respuesta térmica uniforme."
   }
 ]
