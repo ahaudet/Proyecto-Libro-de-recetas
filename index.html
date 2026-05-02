@@ -1,47 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mis Recetas - Alejandro Haudet</title>
-<style>
-    /* ====== TUS ESTILOS ORIGINALES ====== */
-    * { box-sizing: border-box; }
-    body, html { margin: 0; padding: 0; width: 100%; height: 100%; font-family: Arial, sans-serif; background-color: #fffaf0; color: #333; }
-    #view-home { position: fixed; inset: 0; background-image: url('https://images.unsplash.com/photo-1543353071-873f17a7a088?q=80&w=2070&auto-format&fit=crop'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 100; text-align: center; }
-    #recipe-counter { position: absolute; top: 20px; right: 20px; font-size: 0.9rem; color: #c0392b; background: rgba(255,255,255,0.6); padding: 5px 12px; border-radius: 15px; font-weight: bold; }
-    #view-home h1 { font-size: 3.5rem; color: #c0392b; margin-bottom: 0.2rem; text-shadow: 1px 1px 3px rgba(255,255,255,0.8); }
-    #view-home p { font-size: 1.4rem; font-weight: bold; color: #c0392b; text-shadow: 1px 1px 3px rgba(255,255,255,0.8); margin: 5px 0; }
-    .pills-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 800px; padding: 20px; }
-    .category-pill { padding: 12px 24px; border-radius: 30px; border: none; background-color: #d35400; color: white; font-weight: bold; cursor: pointer; transition: 0.2s; }
-    .category-pill:hover { background-color: #c0392b; transform: scale(1.05); }
-    #view-list { display: none; padding: 40px 20px; max-width: 800px; margin: 0 auto; }
-    .recipe-card { border: 1px solid #e0d9cf; background-color: #fffaf0; border-radius: 8px; padding: 20px; margin-bottom: 20px; position: relative; }
-    .recipe-title { color: #c0392b; font-size: 1.8em; margin-top: 0; }
-    .accordion-title { background-color: #d35400; color: white; border: none; padding: 10px; width: 100%; text-align: left; font-weight: bold; margin-top: 10px; border-radius: 5px; cursor: pointer; }
-    .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background-color: #fff2e0; border-radius: 5px; }
-    .submit-button { background-color: #c0392b; color: white; border: none; padding: 8px 15px; border-radius: 20px; margin-top: 10px; margin-right: 5px; cursor: pointer; }
-    #modalOverlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: none; align-items: center; justify-content: center; z-index: 1000; }
-    #modalForm { background: #fffaf0; padding: 25px; width: 90%; max-width: 600px; border-radius: 12px; max-height: 85vh; overflow-y: auto; border: 2px solid #d35400; }
-    .form-group { margin-bottom: 12px; }
-    .form-group label { display: block; font-weight: bold; margin-bottom: 5px; }
-    .form-group input, .form-group textarea { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
-    .import-box { background: #fce4d6; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px dotted #d35400; }
-    .hidden { display: none !important; }
-    
-    /* MODIFICACIÓN: Clase para ocultar botones admin */
-    .admin-only { display: none; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Recetas - Alejandro Haudet</title>
+    <style>
+        /* ====== ESTILOS OPTIMIZADOS ====== */
+        * { box-sizing: border-box; }
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; font-family: Arial, sans-serif; background-color: #fffaf0; color: #333; }
+        #view-home { position: fixed; inset: 0; background-image: url('https://images.unsplash.com/photo-1543353071-873f17a7a088?q=80&w=2070&auto-format&fit=crop'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 100; text-align: center; }
+        #recipe-counter { position: absolute; top: 20px; right: 20px; font-size: 0.9rem; color: #c0392b; background: rgba(255,255,255,0.6); padding: 5px 12px; border-radius: 15px; font-weight: bold; }
+        #view-home h1 { font-size: 3.5rem; color: #c0392b; margin-bottom: 0.2rem; text-shadow: 1px 1px 3px rgba(255,255,255,0.8); }
+        #view-home p { font-size: 1.4rem; font-weight: bold; color: #c0392b; text-shadow: 1px 1px 3px rgba(255,255,255,0.8); margin: 5px 0; }
+        .pills-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 800px; padding: 20px; }
+        .category-pill { padding: 12px 24px; border-radius: 30px; border: none; background-color: #d35400; color: white; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        .category-pill:hover { background-color: #c0392b; transform: scale(1.05); }
+        #view-list { display: none; padding: 40px 20px; max-width: 800px; margin: 0 auto; }
+        .recipe-card { border: 1px solid #e0d9cf; background-color: #fffaf0; border-radius: 8px; padding: 20px; margin-bottom: 20px; position: relative; }
+        .recipe-title { color: #c0392b; font-size: 1.8em; margin-top: 0; }
+        .accordion-title { background-color: #d35400; color: white; border: none; padding: 10px; width: 100%; text-align: left; font-weight: bold; margin-top: 10px; border-radius: 5px; cursor: pointer; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background-color: #fff2e0; border-radius: 5px; }
+        .submit-button { background-color: #c0392b; color: white; border: none; padding: 8px 15px; border-radius: 20px; margin-top: 10px; margin-right: 5px; cursor: pointer; }
+        .hidden { display: none !important; }
+    </style>
 </head>
 <body>
 
     <section id="view-home">
-        <div id="recipe-counter">Recetas: 0</div>
+        <div id="recipe-counter">Cargando...</div>
         <h1>Mis Recetas</h1>
         <p>Por Alejandro Haudet</p>
         <div id="pills-container" class="pills-container"></div>
         <div style="display: flex; gap: 10px;">
-            <button id="btn-add-main" onclick="window.openModal()" class="category-pill admin-only" style="background-color: #27ae60;">+ Agregar Nueva</button>
             <a href="glosario.html" class="category-pill" style="text-decoration: none; background-color: #8B4513;">Glosario</a>
         </div>
     </section>
@@ -51,65 +41,33 @@
         <div id="recipe-results"></div>
     </section>
 
-    <div id="modalOverlay">
-        <div id="modalForm">
-            <button onclick="window.closeModal()" style="float:right; border:none; background:none; font-size:1.5rem; cursor:pointer;">✕</button>
-            <h2 id="modalTitle">Gestión de Receta</h2>
-            <div class="import-box">
-                <label><strong>Importar JSON de Gemini</strong></label>
-                <textarea id="import-json" rows="2" placeholder="Pegá el JSON aquí..." style="width:100%; margin-top:5px;"></textarea>
-                <button type="button" onclick="window.applyImport()" class="submit-button" style="width:100%; background:#d35400;">Cargar Datos</button>
-            </div>
-            <form id="recipe-form">
-                <div class="form-group"><label>Título:</label><input type="text" id="f-title" required></div>
-                <div class="form-group"><label>Categoría:</label><input type="text" id="f-cat"></div>
-                <div class="form-group"><label>Ingredientes (por coma):</label><textarea id="f-ing" rows="3"></textarea></div>
-                <div class="form-group"><label>Instrucciones:</label><textarea id="f-ins" rows="5"></textarea></div>
-                <div class="form-group"><label>Comentarios:</label><textarea id="f-com" rows="2"></textarea></div>
-                <button type="submit" class="submit-button" style="width: 100%; padding: 12px;">Guardar Receta</button>
-            </form>
-        </div>
-    </div>
-
 <script>
     let recipes = [];
-    let currentEditId = null;
-    let isAdmin = false;
 
-    // --- SEGURIDAD ---
-    function checkAdmin() {
-        const params = new URLSearchParams(window.location.search);
-        isAdmin = params.get('admin') === 'true';
-        if (isAdmin) {
-            document.querySelectorAll('.admin-only').forEach(el => el.style.display = 'inline-block');
-        }
-    }
-
-    // --- CARGA DE DATOS ---
+    // --- MOTOR DE EXTRACCIÓN DINÁMICA ---
     async function loadData() {
         try {
-            const response = await fetch('recetas.json');
-            let externalData = response.ok ? await response.json() : [];
-            const localData = JSON.parse(localStorage.getItem('recipes')) || [];
-            const map = new Map();
-            [...externalData, ...localData].forEach(r => { if(r.id) map.set(String(r.id), r); });
-            recipes = Array.from(map.values());
+            // Se agrega timestamp (?v=) para forzar la descarga del JSON más reciente desde GitHub
+            const response = await fetch('recetas.json?v=' + new Date().getTime());
+            if (!response.ok) throw new Error("No se pudo cargar el archivo");
+            recipes = await response.json();
         } catch (e) {
+            console.error("Error cargando recetas:", e);
+            // Backup por si falla la red: intenta cargar del almacenamiento local
             recipes = JSON.parse(localStorage.getItem('recipes')) || [];
         } finally {
             renderCategories();
             updateCounter();
-            checkAdmin();
         }
     }
 
-    function updateCounter() { document.getElementById('recipe-counter').textContent = "Recetas: " + recipes.length; }
+    function updateCounter() { 
+        document.getElementById('recipe-counter').textContent = "Recetas: " + recipes.length; 
+    }
 
     window.showHome = function() {
         document.getElementById('view-list').style.display = 'none';
         document.getElementById('view-home').classList.remove('hidden');
-        renderCategories();
-        checkAdmin();
     };
 
     window.filterBy = function(cat) {
@@ -117,21 +75,20 @@
         document.getElementById('view-list').style.display = 'block';
         const res = document.getElementById('recipe-results');
         res.innerHTML = `<h2>Categoría: ${cat}</h2>`;
+        
         const filtered = (cat === 'Todas') ? recipes : recipes.filter(r => r.category && r.category.includes(cat));
         
         filtered.forEach(r => {
-            const ing = Array.isArray(r.ingredients) ? r.ingredients : (r.ingredients ? r.ingredients.split(',') : []);
+            const ing = Array.isArray(r.ingredients) ? r.ingredients : [];
             res.insertAdjacentHTML('beforeend', `
                 <article class="recipe-card">
                     <h2 class="recipe-title">${r.title}</h2>
+                    <p><strong>Tiempo total:</strong> ${r.totalTime || 'N/A'}</p>
                     <button class="accordion-title" onclick="window.toggleAcc(this)">Ingredientes ▼</button>
                     <div class="accordion-content"><ul>${ing.map(i => `<li>${i}</li>`).join('')}</ul></div>
                     <button class="accordion-title" onclick="window.toggleAcc(this)">Instrucciones ▼</button>
                     <div class="accordion-content"><p style="padding:10px; white-space:pre-line;">${r.instructions}</p></div>
-                    <div class="admin-only" style="margin-top:15px; border-top:1px solid #e0d9cf; padding-top:10px; display: ${isAdmin ? 'block' : 'none'}">
-                        <button onclick="window.editRecipe('${r.id}')" class="submit-button" style="background:#3498db">Editar</button>
-                        <button onclick="window.deleteRecipe('${r.id}')" class="submit-button" style="background:#7f8c8d">Borrar</button>
-                    </div>
+                    ${r.authorComments ? `<p><em>Nota: ${r.authorComments}</em></p>` : ''}
                 </article>
             `);
         });
@@ -140,60 +97,6 @@
     window.toggleAcc = function(btn) {
         const content = btn.nextElementSibling;
         content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
-    };
-
-    // --- MODAL Y FORMULARIO ---
-    window.openModal = function(id = null) {
-        currentEditId = id;
-        document.getElementById('recipe-form').reset();
-        document.getElementById('modalOverlay').style.display = 'flex';
-        if(id) {
-            const r = recipes.find(rec => String(rec.id) === String(id));
-            document.getElementById('f-title').value = r.title;
-            document.getElementById('f-cat').value = r.category || "";
-            document.getElementById('f-ing').value = Array.isArray(r.ingredients) ? r.ingredients.join(', ') : r.ingredients;
-            document.getElementById('f-ins').value = r.instructions;
-            document.getElementById('f-com').value = r.authorComments || "";
-        }
-    };
-
-    window.closeModal = function() { document.getElementById('modalOverlay').style.display = 'none'; };
-
-    window.applyImport = function() {
-        try {
-            const data = JSON.parse(document.getElementById('import-json').value);
-            document.getElementById('f-title').value = data.title || "";
-            document.getElementById('f-cat').value = data.category || "";
-            document.getElementById('f-ing').value = Array.isArray(data.ingredients) ? data.ingredients.join(', ') : (data.ingredients || "");
-            document.getElementById('f-ins').value = data.instructions || "";
-            document.getElementById('f-com').value = data.authorComments || "";
-        } catch(e) { alert("Error en JSON"); }
-    };
-
-    document.getElementById('recipe-form').onsubmit = function(e) {
-        e.preventDefault();
-        const rData = {
-            id: currentEditId || Date.now().toString(),
-            title: document.getElementById('f-title').value,
-            category: document.getElementById('f-cat').value,
-            ingredients: document.getElementById('f-ing').value.split(',').map(i => i.trim()),
-            instructions: document.getElementById('f-ins').value,
-            authorComments: document.getElementById('f-com').value
-        };
-        const idx = recipes.findIndex(r => String(r.id) === String(rData.id));
-        if(idx > -1) recipes[idx] = rData; else recipes.push(rData);
-        localStorage.setItem('recipes', JSON.stringify(recipes));
-        window.closeModal();
-        window.filterBy('Todas');
-    };
-
-    window.editRecipe = function(id) { window.openModal(id); };
-    window.deleteRecipe = function(id) {
-        if(confirm("¿Borrar?")) {
-            recipes = recipes.filter(r => String(r.id) !== String(id));
-            localStorage.setItem('recipes', JSON.stringify(recipes));
-            window.filterBy('Todas');
-        }
     };
 
     function renderCategories() {
@@ -210,6 +113,7 @@
         });
     }
 
+    // Inicializar carga
     loadData();
 </script>
 </body>
