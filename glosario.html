@@ -26,21 +26,21 @@
     }
 
     function renderIndex() {
-        const index = document.getElementById("spice-index");
-        index.innerHTML = "";
-        // Ordenamiento alfabético para eficiencia en la búsqueda visual
-        allSpices.sort((a,b) => a.title.localeCompare(b.title)).forEach(sp => {
-            const icon = getCategoryIcon(sp.category);
-            index.insertAdjacentHTML("beforeend", `
-                <li>
-                    <a href="javascript:void(0)" onclick="showSpice('${sp.id}')">
-                        <span class="item-icon">${icon}</span> ${sp.flag} ${sp.title}
-                    </a>
-                </li>
-            `);
-        });
-    }
-
+    const index = document.getElementById("spice-index");
+    index.innerHTML = "";
+    // Ordenamos alfabéticamente para que el usuario encuentre rápido el reactivo sensorial
+    allSpices.sort((a,b) => a.title.localeCompare(b.title)).forEach(sp => {
+        const icon = getCategoryIcon(sp.category);
+        const flag = sp.flag || "🏳️"; // Fallback técnico
+        index.insertAdjacentHTML("beforeend", `
+            <li>
+                <a href="javascript:void(0)" onclick="window.showSpice('${sp.id}')" style="text-decoration:none; color:#8B4513; display:flex; align-items:center; padding:5px 0;">
+                    <span class="item-icon" style="margin-right:10px;">${icon}</span> ${flag} ${sp.title}
+                </a>
+            </li>
+        `);
+    });
+}
     function renderCards() {
         const list = document.getElementById("content-list");
         list.innerHTML = "";
