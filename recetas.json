@@ -1,19 +1,342 @@
 [
   {
-    "id": "1714670000000",
-    "title": "Receta de Prueba Técnica",
+    "title": "Dip de Berenjenas Asadas",
+    "category": "Entradas",
+    "prepTime": "15 min",
+    "cookTime": "35 min",
+    "totalTime": "50 min",
+    "ingredients": ["2 berenjenas", "2 tomates (sin semillas)", "1 morrón rojo", "1 cebolla morada", "2 o 3 dientes de ajo", "Aceite de oliva", "Comino", "Pimentón", "Ají molido", "Sal", "Perejil o cilantro fresco"],
+    "instructions": "1. Pelar parcialmente las berenjenas y cortar en cubos. 2. Cortar tomates, morrón y cebolla en pedazos grandes. 3. Hornear a 230°C por 15 min. 4. Condimentar y hornear 20 min más hasta dorar. 5. Procesar apenas para mantener textura rústica.",
+    "authorComments": "El choque térmico a 230°C es crítico para la caramelización superficial de los azúcares naturales."
+  },
+  {
+    "title": "Babaganush (Mutabal)",
+    "category": "Entradas",
+    "prepTime": "10 min",
+    "cookTime": "30 min",
+    "totalTime": "40 min",
+    "ingredients": ["2 berenjenas grandes", "2 cdas de Tahini", "2 dientes de ajo", "Jugo de 1/2 limón", "1/2 cdita de Comino", "AOVE", "Sal y pimienta", "Pimentón dulce"],
+    "instructions": "1. Asar berenjenas sobre llama directa hasta quemar la piel. 2. Pelar y retirar exceso de líquido de la pulpa. 3. Mezclar con tahini, ajo, limón y especias. 4. Procesar hasta obtener pasta con textura.",
+    "authorComments": "El asado directo sobre llama define el perfil sensorial ahumado característico."
+  },
+  {
+    "title": "Postre de Leche Liviano (Estilo Leche Asada)",
+    "category": "Postres",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "totalTime": "60 min",
+    "ingredients": ["1 l de leche", "4 huevos", "50 g de harina", "75 g de azúcar Hileret Light (equiv. a 150 g de azúcar común)", "Piel de limón", "Vainilla", "Canela"],
+    "instructions": "1. Infusionar leche con limón y canela. 2. Batir yemas con Hileret Light. 3. Integrar harina y leche fría. 4. Incorporar claras a punto nieve con movimientos envolventes. 5. Hornear a 170°C por 45 min.",
+    "authorComments": "Sustitución técnica de sacarosa por Hileret Light; la matriz aireada depende de la incorporación de las claras."
+  },
+  {
+    "title": "Hummus de Aguacate y Cilantro",
+    "category": "Entradas",
+    "prepTime": "10 min",
+    "cookTime": "0 min",
+    "totalTime": "10 min",
+    "ingredients": ["400g de Garbanzos", "1 Aguacate grande", "1/2 taza de Cilantro", "1/4 taza de Jugo de Lima", "2 cdas de AOVE", "1 diente de Ajo", "Comino", "Sal y pimienta"],
+    "instructions": "1. Procesar todos los ingredientes a alta velocidad por 2 min. 2. Ajustar la reología con agua o aceite si es necesario. 3. Servir inmediatamente para mitigar la oxidación enzimática.",
+    "authorComments": "El ácido cítrico de la lima actúa como agente antioxidante crítico para el aguacate."
+  },
+  {
+    "title": "Za'aluk (Vegetales Asados Rústicos)",
+    "category": "Entradas",
+    "prepTime": "15 min",
+    "cookTime": "35 min",
+    "totalTime": "50 min",
+    "ingredients": ["2 berenjenas", "2 tomates", "1 morrón rojo", "1 cebolla morada", "Ajo", "AOVE", "Comino", "Pimentón", "Ají molido", "Sal"],
+    "instructions": "1. Preparar vegetales en trozos uniformes. 2. Hornear a 230°C por 15 min. 3. Condimentar y hornear 20 min adicionales. 4. Procesar levemente conservando trozos visibles.",
+    "authorComments": "Variante marroquí que resalta la caramelización y textura de los componentes asados."
+  },
+  {
+    "title": "Dulce de Membrillo Rápido",
+    "category": "Dulces",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "totalTime": "45 min",
+    "ingredients": ["1 kg de membrillos", "800 g de azúcar", "Zumo de limón"],
+    "instructions": "1. Trocear membrillos con piel (rica en pectina). 2. Cocinar en microondas con azúcar y limón en ciclos de 5 min a 850W. 3. Remover entre ciclos hasta color ambarino. 4. Triturar y dejar solidificar.",
+    "authorComments": "La pectina natural de la cáscara es el polímero gelificante fundamental en este proceso."
+  },
+  {
+    "title": "Mermelada de Frutilla Light al Microondas",
+    "category": "Dulces",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "totalTime": "40 min",
+    "ingredients": ["1 Kg de frutillas", "1 cda de jugo de limón", "150 g de Hileret", "100g de azúcar común"],
+    "instructions": "1. Cocinar frutillas 7 min en microondas al 100%. 2. Procesar con limón y azúcares. 3. Cocinar de 20 a 24 min adicionales removiendo cada 5 min. 4. Envasar en caliente.",
+    "authorComments": "Control de evaporación optimizado para entorno de microondas; envasado en caliente para vacío parcial."
+  },
+  {
+    "title": "Biancomagiare",
+    "category": "Postres",
+    "prepTime": "10 min",
+    "cookTime": "10 min",
+    "totalTime": "20 min",
+    "ingredients": ["45 g de Almidón de maíz", "30 g de Hileret Light", "500 cc de leche de almendras"],
+    "instructions": "1. Disolver fécula en un bol. 2. Agregar Hileret y leche de almendras gradualmente. 3. Llevar al fuego hasta ebullición. 4. Batir un par de minutos hasta entibiar y pasar a moldes.",
+    "authorComments": "Postre siciliano basado en la gelificación de almidón en matriz no láctea."
+  },
+  {
+    "title": "Dulce de Membrillo Light al Microondas",
+    "category": "Dulces",
+    "prepTime": "20 min",
+    "cookTime": "30 min",
+    "totalTime": "50 min",
+    "ingredients": ["1.300 g de Membrillos", "230g de Azúcar blanco", "190g de Endulzante Hileret"],
+    "instructions": "1. Pelar y trocear membrillos (reservar carozos). 2. Microondas por 10 min. 3. Agregar azúcar, carozos envueltos en gasa y endulzante. 4. Cocinar 20 min más removiendo cada 5 min. 5. Estacionar 15-20 días.",
+    "authorComments": "Los carozos en gasa aportan la pectina necesaria para compensar la reducción de azúcar común."
+  },
+  {
+    "title": "Pimientos Agridulces",
+    "category": "Entradas",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "totalTime": "30 min",
+    "ingredients": ["1 Pimiento rojo", "1 Pimiento verde", "1 Pimiento amarillo", "1 taza de Azúcar", "1 taza de Vinagre", "1 taza de Aceite", "Pimienta y laurel"],
+    "instructions": "1. Cortar morrones en tiras de 1 cm. 2. Hervir junto al vinagre, azúcar y aceite. 3. Retirar del fuego (preferentemente crujientes). 4. Envasar dejando 1 cm de aceite por encima y enfriar boca abajo.",
+    "authorComments": "Técnica de conservación mediante pH bajo y generación de vacío invertido en el envasado."
+  },
+  {
+    "title": "Hummus Clásico",
+    "category": "Entradas",
+    "prepTime": "10 min",
+    "cookTime": "0 min",
+    "totalTime": "10 min",
+    "ingredients": ["200g de Garbanzos", "1 diente de Ajo", "Pimentón dulce y ají molido", "1/4 cdita de Comino", "1 cda de Tahini", "Limón y Aceite de oliva"],
+    "instructions": "1. Mixear todos los ingredientes hasta lograr la textura deseada. 2. Corregir sazón. 3. Decorar con pimentón, aceite de oliva y perejil picado.",
+    "authorComments": "Emulsión clásica con tahini; el comino actúa como carminativo."
+  },
+  {
+    "title": "Dip de Porotos Negros",
+    "category": "Entradas",
+    "prepTime": "10 min",
+    "cookTime": "0 min",
+    "totalTime": "10 min",
+    "ingredients": ["1 lata de Porotos negros", "1 diente de Ajo", "Sal, pimienta y ají molido", "Jugo de limón", "Ras-el-hanout a gusto", "Aceite de oliva"],
+    "instructions": "1. Mixear todos los ingredientes. 2. Rectificar sazón si es necesario.",
+    "authorComments": "El Ras-el-hanout aporta una profundidad aromática de 20+ especias magrebíes."
+  },
+  {
+    "title": "Empanadas de Osobuco Braseado",
+    "category": "Entradas",
+    "prepTime": "40 min",
+    "cookTime": "180 min",
+    "totalTime": "220 min",
+    "ingredients": ["1 Kg de osobuco", "8 cebollas", "Morrón rojo", "Verdeo", "Tomates", "Locoto", "Vinagre 2 cdas", "Especias"],
+    "instructions": "1. Dorar osobuco y hervir 3 h. 2. Desmechar carne y reservar caldo. 3. Rehogar cebollas y morrón, integrar carne y abundantes especias. 4. Agregar caldo y verdeo; enfriar 24 h. 5. Hornear a 180°C.",
+    "authorComments": "La hidrólisis prolongada del colágeno es fundamental para la terneza del osobuco."
+  },
+  {
+    "title": "Alejandro's Pizza",
     "category": "Plato Principal",
-    "prepTime": "15 minutos",
-    "cookTime": "20 minutos",
-    "totalTime": "35 minutos",
-    "ingredients": [
-      "500 g de ingrediente principal",
-      "100 ml de líquido de cobertura",
-      "10 g de sal fina",
-      "1 cdta. de Merkén",
-      "1 cdta. de Shichimi Togarashi"
-    ],
-    "instructions": "1. Precalentar a 180°C.\n2. Mezclar los componentes secos.\n3. Incorporar los líquidos lentamente hasta homogeneizar.\n4. Cocinar durante 20 minutos.",
-    "authorComments": "Optimizado para una respuesta térmica uniforme."
+    "prepTime": "20 min",
+    "cookTime": "15 min",
+    "totalTime": "35 min",
+    "ingredients": ["Prepizza", "Salsa para pizza", "200 g Mozzarella", "100 g Jamón crudo", "Verdeo", "Morrones varios", "Tomate redondo", "Sal especiada"],
+    "instructions": "1. Rehogar verdeo y morrones. 2. Hornear prepizza con salsa. 3. Agregar salteado, mozzarella y hornear hasta derretir. 4. Terminar con jamón crudo y rodajas de tomate condimentadas.",
+    "authorComments": "Ensamblaje técnico sobre prepizza con corrección de sazón in situ."
+  },
+  {
+    "title": "Matambrito de Cerdo al Libro",
+    "category": "Plato Principal",
+    "prepTime": "25 min",
+    "cookTime": "45 min",
+    "totalTime": "70 min",
+    "ingredients": ["1 Matambrito", "Ciruelas pasas", "Almendras", "Limón", "Estragón", "Sal con curry", "Salsa (cebolla, hongos, fécula)"],
+    "instructions": "1. Marinar cerdo en limón y estragón. 2. Rellenar con ciruelas, almendras y zanahoria. 3. Sellar en plancha, envolver en aluminio y hornear 30 min. 4. Servir con salsa espesada con fécula.",
+    "authorComments": "Sello por conducción térmica y finalización por convección; la fécula calibra la viscosidad de la salsa."
+  },
+  {
+    "title": "Empanada Gallega",
+    "category": "Plato Principal",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "totalTime": "60 min",
+    "ingredients": ["Pimiento asado", "Cebolla", "Ajo", "2 Tomates", "1 lata de Caballa o Jurel", "Masa hojaldre", "Pimentón"],
+    "instructions": "1. Rehogar cebolla, ajo, pimiento y tomate. 2. Agregar pescado desmenuzado y pimentón. 3. Cocinar 10 min a fuego bajo. 4. Estirar masa, rellenar y hornear hasta dorar.",
+    "authorComments": "Desmenuzado manual del pescado para preservar la integridad de la fibra."
+  },
+  {
+    "title": "Cazuela de Mariscos",
+    "category": "Plato Principal",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "totalTime": "45 min",
+    "ingredients": ["1.2 Kg mixtura de mariscos", "Cebolla, Ajo, Morrón", "Tomate", "150 ml Vino blanco", "Caldo", "Shichimi Togarashi", "Merkén"],
+    "instructions": "1. Sofreír vegetales. 2. Agregar tomate y cocinar 10 min. 3. Incorporar vino, caldo y especias. 4. Cocinar anillos de calamar y finalmente el resto de los mariscos por 10 min.",
+    "authorComments": "Perfil sensorial potenciado con Merkén (ahumado) y Shichimi (siete sabores japoneses)."
+  },
+  {
+    "title": "Portobellos Mar y Tierra",
+    "category": "Entradas",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "totalTime": "30 min",
+    "ingredients": ["4 Portobellos grandes", "1 Cebolla", "200 g Langostinos", "Ron blanco"],
+    "instructions": "1. Saltear langostinos y flambear con ron. 2. Rehogar cebolla y cabitos de hongo. 3. Mezclar, rellenar portobellos y hornear 10 min cubiertos con aluminio.",
+    "authorComments": "Técnica de flambeado para desglasar azúcares y concentrar el bouquet del ron."
+  },
+  {
+    "title": "Dip de Remolachas",
+    "category": "Entradas",
+    "prepTime": "10 min",
+    "cookTime": "0 min",
+    "totalTime": "10 min",
+    "ingredients": ["1 Remolacha", "1 diente de Ajo", "Pimentón dulce y ají molido", "Limón y Aceite de oliva"],
+    "instructions": "1. Mixear todos los ingredientes hasta lograr una textura homogénea. 2. Corregir sazón.",
+    "authorComments": "Uso de mixer para lograr una reología constante en la emulsión."
+  },
+  {
+    "title": "Bruschetta de Rúcula con Peras y Queso Azul",
+    "category": "Entradas",
+    "prepTime": "15 min",
+    "cookTime": "10 min",
+    "totalTime": "25 min",
+    "ingredients": ["2 Peras", "1 cda Azúcar rubio", "Rúcula", "150g Queso azul", "Pan tostado"],
+    "instructions": "1. Saltear peras con azúcar rubio hasta disolver. 2. Montar sobre pan con rúcula y queso azul. 3. Terminar con aceite de oliva.",
+    "authorComments": "Caramelización de azúcares complejos (mascabo) para equilibrio de pH con el queso azul."
+  },
+  {
+    "title": "Pollo Relleno Estilo Patagónico",
+    "category": "Plato Principal",
+    "prepTime": "40 min",
+    "cookTime": "60 min",
+    "totalTime": "100 min",
+    "ingredients": ["1 Pollo desollado", "200g Carne molida", "Hongos de pino", "100g Piñones", "Merkén a gusto"],
+    "instructions": "1. Hidratar hongos. 2. Saltear cebolla, morrón y carne molida. 3. Agregar piñones, hongos y Merkén. 4. Rellenar pollo y hornear 1 h.",
+    "authorComments": "Inclusión de piñones y Merkén para reforzar el perfil sensorial regional patagónico."
+  },
+  {
+    "title": "Ensalada de Hinojo y Mango",
+    "category": "Entradas",
+    "prepTime": "15 min",
+    "cookTime": "10 min",
+    "totalTime": "25 min",
+    "ingredients": ["1 Hinojo", "1 Mango", "Jugo de naranja", "Tajín", "Aceto balsámico blanco"],
+    "instructions": "1. Saltear hinojo y reducir con jugo de naranja. 2. Mezclar con mango en cubos. 3. Condimentar con Tajín y aceto.",
+    "authorComments": "Contraste técnico: reducción de ácidos frutales y realce con Tajín mexicano."
+  },
+  {
+    "title": "Ensalada de Rúcula, Peras y Queso Azul",
+    "category": "Entradas",
+    "prepTime": "15 min",
+    "cookTime": "10 min",
+    "totalTime": "25 min",
+    "ingredients": ["2 Peras", "Azúcar rubio", "Rúcula", "150g Queso azul", "Aceto de frutos rojos"],
+    "instructions": "1. Caramelizar peras. 2. Mezclar con rúcula y dados de queso azul. 3. Condimentar con sal, aceite de olivas y aceto.",
+    "authorComments": "Variante de ensalada con equilibrio de grasas lácteas y acidez controlada."
+  },
+  {
+    "title": "Empanadas Árabes, Sfijas o Fatay",
+    "category": "Entradas",
+    "prepTime": "30 min",
+    "cookTime": "20 min",
+    "totalTime": "170 min",
+    "ingredients": ["1 Kg Carne molida", "2 Cebollas", "Morrones", "Tomates", "Menta y cilantro", "1 cda Baharat", "Jugo de 6 limones"],
+    "instructions": "1. Mezclar carne con vegetales, Baharat y jugo de limón. 2. Reposar 2 h (cocción ácida). 3. Armar y hornear a 180°C hasta dorar.",
+    "authorComments": "La desnaturalización proteica por ácido cítrico es el paso crítico antes del horneado."
+  },
+  {
+    "title": "Trufas de Chocolate y Palta",
+    "category": "Postres",
+    "prepTime": "15 min",
+    "cookTime": "5 min",
+    "totalTime": "50 min",
+    "ingredients": ["140 g Chocolate 70%", "100 g pulpa de palta", "Café instantáneo", "Hileret", "Aromatizante (Merkén o Naranja)"],
+    "instructions": "1. Derretir chocolate. 2. Procesar palta hasta puré sedoso e integrar. 3. Refrigerar 30 min, formar esferas y cubrir con cacao.",
+    "authorComments": "Sustitución lipídica: la grasa insaturada de la palta reemplaza la crema en la emulsión."
+  },
+  {
+    "title": "Chutney de Duraznos",
+    "category": "Entradas",
+    "prepTime": "20 min",
+    "cookTime": "45 min",
+    "totalTime": "65 min",
+    "ingredients": ["1 Kg duraznos", "1 cebolla", "300 g azúcar", "250 ml vinagre", "Jengibre y Cúrcuma", "Ají molido"],
+    "instructions": "1. Cocinar todos los componentes juntos hasta lograr consistencia de mermelada.",
+    "authorComments": "Conservación por pH bajo y concentración de sólidos; la cúrcuma actúa como colorante natural."
+  },
+  {
+    "title": "Muhamara",
+    "category": "Entradas",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "totalTime": "45 min",
+    "ingredients": ["3 Pimientos rojos", "1 cabeza de Ajo", "100 g Nueces", "Pimentón ahumado", "Pasta de tomate"],
+    "instructions": "1. Asar pimientos y ajo envuelto en aluminio. 2. Pelar y procesar con el resto de los ingredientes.",
+    "authorComments": "El asado del ajo mitiga la pungencia de la alicina, resultando en un perfil más dulce."
+  },
+  {
+    "title": "Vacío al Disco con Vino Tinto",
+    "category": "Plato Principal",
+    "prepTime": "30 min",
+    "cookTime": "90 min",
+    "totalTime": "120 min",
+    "ingredients": ["4 Kg Vacío", "Morrones, Cebollas, Puerros", "1 l Vino tinto", "2 l Caldo", "Arvejas"],
+    "instructions": "1. Sellar carne en disco caliente. 2. Rehogar vegetales. 3. Agregar vino, reducir alcohol y sumar caldo. 4. Cocinar 1.5 h.",
+    "authorComments": "Cocción lenta en medio ácido para desnaturalizar el tejido conectivo del vacío."
+  },
+  {
+    "title": "Bondiola de Cerdo con Salsa de Mango",
+    "category": "Plato Principal",
+    "prepTime": "20 min",
+    "cookTime": "40 min",
+    "totalTime": "60 min",
+    "ingredients": ["6 churrascos Bondiola", "Vino blanco", "1 Mango maduro", "Cebolla"],
+    "instructions": "1. Salsa: Cocinar mango, cebolla y vino 20 min; procesar. 2. Bondiola: Sellar a la plancha y desglasar con vino.",
+    "authorComments": "Contraste enzimático frutal para equilibrar la densidad lipídica del cerdo."
+  },
+  {
+    "title": "Arroz Negro Tropical",
+    "category": "Acompañamientos",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "totalTime": "30 min",
+    "ingredients": ["Arroz jazmín negro", "Escamas de coco", "Leche de coco", "Fécula de maíz"],
+    "instructions": "1. Hervir arroz (3:1). 2. Mezclar con cebolla rehogada, coco y leche de coco espesada con fécula.",
+    "authorComments": "El arroz jazmín negro aporta antocianinas y una textura firme superior al blanco."
+  },
+  {
+    "title": "Salmón a la Naranja",
+    "category": "Plato Principal",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "totalTime": "25 min",
+    "ingredients": ["4 lomos Salmón", "2 Naranjas", "Miel", "Mostaza de Dijon", "Fécula de maíz"],
+    "instructions": "1. Mezclar salsa. 2. Dorar salmón 3 min por lado. 3. Verter salsa en sartén y cocinar hasta espesar.",
+    "authorComments": "La fécula de maíz calibra la viscosidad final para una cobertura perfecta del lomo."
+  },
+  {
+    "title": "Empanadas de Bondiola Braseada",
+    "category": "Entradas",
+    "prepTime": "30 min",
+    "cookTime": "130 min",
+    "totalTime": "160 min",
+    "ingredients": ["1.5 Kg Bondiola", "1 Kg Cebollas", "Puerro", "Morrón rojo", "Especias"],
+    "instructions": "1. Dorar bondiola y brasear 2 h. 2. Desmechar y mezclar con salteado de vegetales. 3. Enfriar 24 h antes de armar.",
+    "authorComments": "Braseado técnico para asegurar la terneza absoluta del relleno."
+  },
+  {
+    "title": "Membrillos en Cascos al Vino Tinto",
+    "category": "Postres",
+    "prepTime": "20 min",
+    "cookTime": "40 min",
+    "totalTime": "60 min",
+    "ingredients": ["1 Kg Membrillos", "1 taza Azúcar", "1 taza Agua", "1 taza Vino tinto"],
+    "instructions": "1. Limpiar membrillos en cascos uniformes. 2. Cocinar en almíbar de vino hasta tiernizar y reducir líquido.",
+    "authorComments": "Tratamiento térmico final de 5 min en frascos para estabilidad microbiológica."
+  },
+  {
+    "title": "Babaganush (Variante con Sumaque)",
+    "category": "Entradas",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "totalTime": "45 min",
+    "ingredients": ["2 Berenjenas", "Morrón", "Tomate", "Sumaque", "Tahini"],
+    "instructions": "1. Asar vegetales y reposar 10 min tapados. 2. Pelar, picar a cuchillo y decorar con sumaque y tahini.",
+    "authorComments": "El sumaque aporta una acidez cítrica profunda sin añadir humedad."
   }
 ]
