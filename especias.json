@@ -566,4 +566,27 @@
       }
     ]
   }
+  ,
+  {
+    "id": "spice_curcuma",
+    "title": "Cúrcuma",
+    "flag": "🇮🇳",
+    "category": "aromatico",
+    "introduction": "Rizoma desecado y pulverizado de la Curcuma longa, valorado por su capacidad colorante y propiedades conservantes.",
+    "sections": [
+      {
+        "title": "Origen y Geografía",
+        "content": "Nativa del sudeste asiático, principalmente de la India, donde se produce la mayor parte del suministro global de alta calidad."
+      },
+      {
+        "title": "Perfil Sensorial",
+        "content": "Aroma terroso y ligeramente amargo con notas de almizcle. Aporta un color amarillo vibrante debido a la presencia de curcumina."
+      },
+      {
+        "title": "Usos comunes",
+        "content": "Componente esencial de currys, chutneys y arroces. En tu recetario, es clave para la estabilidad y el color del Chutney de Duraznos."
+      }
+    ]
+  }
+]
 ]
