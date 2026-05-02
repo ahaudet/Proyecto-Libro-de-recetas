@@ -1,23 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario de Especias - A. Haudet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji" rel="stylesheet">
+    <style>
+        /* Estilos Base Industriales */
+        body { font-family: Arial, "Noto Color Emoji", sans-serif; margin: 0; padding: 0; background-color: #fffaf0; color: #333; }
+        button { cursor: pointer; }
+        .main-content { max-width: 800px; margin: 20px auto; padding: 0 10px; }
+        .html-index { background-color: #fcf8ec; border: 1px solid #e0d9cf; border-radius: 8px; padding: 15px; margin-bottom: 20px; }
+        .html-index h2 { color: #8B4513; margin-top: 0; display: flex; justify-content: space-between; align-items: center; font-size: 1.5em; }
+        #spice-count { font-size: 0.5em; color: #7f8c8d; font-weight: normal; background: #e8e8e8; padding: 3px 10px; border-radius: 12px; border: 1px solid #ccc; }
+        .html-index ul { list-style-type: none; padding: 0; margin: 0; columns: 2; }
+        .html-index li a { color: #8B4513; text-decoration: none; font-weight: bold; display: flex; align-items: center; padding: 5px 0; }
+        .item-icon { margin-right: 8px; font-size: 1.1em; min-width: 25px; }
+        .spice-card { background-color: #fdf5e6; border: 1px solid #e0d9cf; border-left: 5px solid #e67e22; border-radius: 8px; padding: 20px; margin-bottom: 20px; display: none; } 
+        .accordion-title { background-color: #c0392b; color: white; border: none; padding: 12px 15px; width: 100%; text-align: left; font-weight: bold; margin-top: 10px; border-radius: 5px; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background-color: #fff2e0; padding: 0 15px; }
+        .submit-button { background-color: #27ae60; color: white; border: none; padding: 8px 15px; border-radius: 20px; font-size: 0.9em; text-decoration: none; display: inline-block; }
+        .header-container { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; gap: 10px; }
+        .header-title { color: #8B4513; margin: 0; flex-grow: 1; text-align: center; }
+        #modalOverlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: none; align-items: center; justify-content: center; z-index: 1000; }
+        #modalForm { background-color: #fffaf0; border-radius: 10px; padding: 20px; width: 90%; max-width: 600px; max-height: 85vh; overflow-y: auto; }
+        .form-group { margin-bottom: 10px; }
+        .form-group label { display: block; font-weight: bold; margin-bottom: 5px; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 8px; box-sizing: border-box; }
+    </style>
+</head>
+<body>
+
+<main class="main-content">
+    <div class="header-container">
+        <a href="index.html" class="submit-button" style="background-color: #7f8c8d;">Volver</a>
+        <h2 class="header-title">Glosario de Especias</h2>
+        <div style="display: flex; gap: 5px;">
+            <button class="submit-button" style="background-color: #2980b9;" onclick="exportarDatos()">Exportar JSON</button>
+            <button class="submit-button" onclick="openModal()">+ Agregar</button>
+        </div>
+    </div>
+
+    <section class="html-index" id="main-index">
+        <h2>Índice <span id="spice-count">0 items</span></h2>
+        <ul id="spice-index"></ul>
+    </section>
+
+    <section id="content-list"></section>
+</main>
+
+<div id="modalOverlay">
+    <div id="modalForm">
+        <button onclick="closeModal()" style="float:right; border:none; background:none; font-size:1.2em;">✕</button>
+        <h2>Ficha Técnica de Especia</h2>
+        <form id="spice-form">
+            <div class="form-group"><label>Nombre:</label><input type="text" id="f-title" required></div>
+            <div class="form-group"><label>Bandera:</label><input type="text" id="f-flag"></div>
+            <div class="form-group"><label>Categoría:</label>
+                <select id="f-category">
+                    <option value="picante">Picante</option>
+                    <option value="aromatico">Aromático</option>
+                    <option value="dulce">Dulce</option>
+                    <option value="herbal">Herbal</option>
+                    <option value="mezcla">Mezcla</option>
+                </select>
+            </div>
+            <div class="form-group"><label>Introducción:</label><textarea id="f-intro" rows="2"></textarea></div>
+            <div class="form-group"><label>Origen y Geografía:</label><textarea id="f-sec1" rows="2"></textarea></div>
+            <div class="form-group"><label>Perfil Sensorial:</label><textarea id="f-sec2" rows="2"></textarea></div>
+            <div class="form-group"><label>Usos comunes:</label><textarea id="f-sec3" rows="2"></textarea></div>
+            <button type="submit" class="submit-button" style="width:100%; margin-top:10px;">Guardar Cambios</button>
+        </form>
+    </div>
+</div>
+
 <script>
     let allSpices = [];
+    let currentEditId = null;
 
-    // --- MOTOR DE CARGA DESDE ESPECIAS.JSON ---
     async function loadGlosario() {
         try {
-            // Se agrega timestamp para asegurar que siempre cargue la última versión de tu base de datos
-            const response = await fetch('especias.json?v=' + new Date().getTime());
-            if (!response.ok) throw new Error("Fallo en la recepción de la base de datos de especias");
-            
-            allSpices = await response.json();
+            const response = await fetch('./especias.json?v=' + new Date().getTime());
+            if (!response.ok) throw new Error("Error en red");
+            const data = await response.json();
+            // Mezclamos datos de GitHub con los agregados localmente
+            const local = JSON.parse(localStorage.getItem('mis_especias_idea')) || [];
+            const localIds = local.map(l => l.id);
+            const filtrados = data.filter(d => !localIds.includes(d.id));
+            allSpices = [...filtrados, ...local];
         } catch (e) {
-            console.error("Error técnico en la carga:", e);
-            // Backup por si falla la red: carga del almacenamiento local que usa tu botón 'Agregar'
+            console.warn("Cargando solo desde LocalStorage");
             allSpices = JSON.parse(localStorage.getItem('mis_especias_idea')) || [];
         } finally {
-            document.getElementById("spice-count").innerText = `${allSpices.length} ítems`;
-            renderIndex();
-            renderCards();
+            renderAll();
         }
+    }
+
+    function renderAll() {
+        document.getElementById("spice-count").innerText = `${allSpices.length} ítems`;
+        renderIndex();
+        renderCards();
     }
 
     function getCategoryIcon(cat) {
@@ -26,62 +108,114 @@
     }
 
     function renderIndex() {
-    const index = document.getElementById("spice-index");
-    index.innerHTML = "";
-    // Ordenamos alfabéticamente para que el usuario encuentre rápido el reactivo sensorial
-    allSpices.sort((a,b) => a.title.localeCompare(b.title)).forEach(sp => {
-        const icon = getCategoryIcon(sp.category);
-        const flag = sp.flag || "🏳️"; // Fallback técnico
-        index.insertAdjacentHTML("beforeend", `
-            <li>
-                <a href="javascript:void(0)" onclick="window.showSpice('${sp.id}')" style="text-decoration:none; color:#8B4513; display:flex; align-items:center; padding:5px 0;">
-                    <span class="item-icon" style="margin-right:10px;">${icon}</span> ${flag} ${sp.title}
-                </a>
-            </li>
-        `);
-    });
-}
+        const index = document.getElementById("spice-index");
+        index.innerHTML = "";
+        allSpices.sort((a,b) => a.title.localeCompare(b.title)).forEach(sp => {
+            const icon = getCategoryIcon(sp.category);
+            index.insertAdjacentHTML("beforeend", `<li><a href="javascript:void(0)" onclick="showSpice('${sp.id}')"><span class="item-icon">${icon}</span> ${sp.flag || ''} ${sp.title}</a></li>`);
+        });
+    }
+
     function renderCards() {
         const list = document.getElementById("content-list");
         list.innerHTML = "";
         allSpices.forEach(sp => {
             const sections = sp.sections.map(s => `
-                <button class="accordion-title" onclick="window.toggleAcc(this)">${s.title} ▼</button>
+                <button class="accordion-title" onclick="toggleAcc(this)">${s.title} ▼</button>
                 <div class="accordion-content"><p>${s.content}</p></div>
             `).join("");
-
+            
             list.insertAdjacentHTML("beforeend", `
-                <article class="spice-card" id="${sp.id}" style="display:none;">
-                    <button onclick="showIndex()" style="background:none; border:none; color:#c0392b; font-weight:bold; cursor:pointer; margin-bottom:15px;">⬅ Volver al Índice</button>
-                    <h3 style="color:#d35400; margin-top:0;">${sp.flag} ${sp.title}</h3>
+                <article class="spice-card" id="${sp.id}">
+                    <button onclick="showIndex()" style="background:none; border:none; color:#c0392b; font-weight:bold;">⬅ Índice</button>
+                    <h3 style="color:#d35400;">${sp.flag || ''} ${sp.title}</h3>
                     <p><em>${sp.introduction}</em></p>
                     ${sections}
-                    <div style="margin-top:20px; display: flex; gap: 10px;">
+                    <div style="margin-top:15px; display: flex; gap: 10px;">
                         <button onclick="editarEspecia('${sp.id}')" class="submit-button" style="background-color:#2980b9;">Editar</button>
                         <button onclick="eliminarEspecia('${sp.id}')" class="submit-button" style="background-color:#c0392b;">Borrar</button>
                     </div>
-                </article>
-            `);
+                </article>`);
         });
     }
 
-    // --- LÓGICA DE INTERFAZ ---
     window.toggleAcc = function(btn) {
         const content = btn.nextElementSibling;
         content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
-    };
+    }
 
     window.showSpice = function(id) {
-        document.getElementById("main-index").style.display = "none";
-        document.getElementById(id).style.display = "block";
+        document.getElementById("main-index").style.display="none";
+        document.querySelectorAll(".spice-card").forEach(c => c.style.display="none");
+        document.getElementById(id).style.display="block";
         window.scrollTo(0,0);
-    };
+    }
 
     window.showIndex = function() {
-        document.querySelectorAll(".spice-card").forEach(c => c.style.display = "none");
-        document.getElementById("main-index").style.display = "block";
+        document.querySelectorAll(".spice-card").forEach(c => c.style.display="none");
+        document.getElementById("main-index").style.display="block";
+    }
+
+    window.openModal = function() { document.getElementById("modalOverlay").style.display = "flex"; }
+    window.closeModal = function() { 
+        document.getElementById("modalOverlay").style.display = "none"; 
+        currentEditId = null; 
+        document.getElementById("spice-form").reset(); 
+    }
+
+    document.getElementById("spice-form").onsubmit = (e) => {
+        e.preventDefault();
+        const nueva = {
+            id: currentEditId || "spice_" + Date.now(),
+            title: document.getElementById("f-title").value,
+            flag: document.getElementById("f-flag").value,
+            category: document.getElementById("f-category").value,
+            introduction: document.getElementById("f-intro").value,
+            sections: [
+                { title: "Origen y Geografía", content: document.getElementById("f-sec1").value },
+                { title: "Perfil Sensorial", content: document.getElementById("f-sec2").value },
+                { title: "Usos comunes", content: document.getElementById("f-sec3").value }
+            ]
+        };
+        let local = JSON.parse(localStorage.getItem('mis_especias_idea')) || [];
+        local = local.filter(l => l.id !== nueva.id);
+        local.push(nueva);
+        localStorage.setItem('mis_especias_idea', JSON.stringify(local));
+        location.reload(); // Recarga para impactar cambios
     };
 
-    // Inicializar el sistema
+    window.editarEspecia = function(id) {
+        currentEditId = id;
+        const sp = allSpices.find(s => s.id === id);
+        document.getElementById("f-title").value = sp.title;
+        document.getElementById("f-flag").value = sp.flag;
+        document.getElementById("f-category").value = sp.category;
+        document.getElementById("f-intro").value = sp.introduction;
+        document.getElementById("f-sec1").value = sp.sections[0].content;
+        document.getElementById("f-sec2").value = sp.sections[1].content;
+        document.getElementById("f-sec3").value = sp.sections[2].content;
+        openModal();
+    }
+
+    window.eliminarEspecia = function(id) {
+        if (confirm("¿Borrar este registro?")) {
+            let local = JSON.parse(localStorage.getItem('mis_especias_idea')) || [];
+            local = local.filter(l => l.id !== id);
+            localStorage.setItem('mis_especias_idea', JSON.stringify(local));
+            location.reload();
+        }
+    }
+
+    window.exportarDatos = function() {
+        const data = JSON.stringify(allSpices, null, 2);
+        const blob = new Blob([data], {type: "application/json"});
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = "especias_actualizadas.json";
+        a.click();
+    }
+
     loadGlosario();
 </script>
+</body>
+</html>
