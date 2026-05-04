@@ -80,21 +80,25 @@
 
     async function loadGlosario() {
         try {
-            const response = await fetch('./especias.json?v=' + new Date().getTime());
-            if (!response.ok) throw new Error("Error en red");
+          const response = await fetch('especias.json?v=' + new Date().getTime());
+           if (response.ok) {
             const data = await response.json();
-            // Mezclamos datos de GitHub con los agregados localmente
             const local = JSON.parse(localStorage.getItem('mis_especias_idea')) || [];
             const localIds = local.map(l => l.id);
             const filtrados = data.filter(d => !localIds.includes(d.id));
             allSpices = [...filtrados, ...local];
-        } catch (e) {
-            console.warn("Cargando solo desde LocalStorage");
-            allSpices = JSON.parse(localStorage.getItem('mis_especias_idea')) || [];
-        } finally {
-            renderAll();
+        } else {
+            throw new Error("No se pudo leer el JSON");
         }
+    } catch (e) {
+        console.warn("Fallo el fetch, cargando solo local");
+        allSpices = JSON.parse(localStorage.getItem('mis_especias_idea')) || [];
+    } finally {
+        // Validación de seguridad: si no hay nada, allSpices debe ser un array vacío, no undefined
+        if (!allSpices) allSpices = []; 
+        renderAll();
     }
+}
 
     function renderAll() {
         document.getElementById("spice-count").innerText = `${allSpices.length} ítems`;
