@@ -6,18 +6,9 @@
     "category": "picante",
     "introduction": "Fruto del capsicum desecado y triturado, piedra angular de la sazón argentina.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Tradicionalmente producido en el Noroeste Argentino (NOA)."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Picor moderado con notas dulces, frutales y un ahumado natural."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Indispensable en el chimichurri, rellenos de empanadas, locros y para saborizar aceites de acabado en parrilla."
-      }
+      { "title": "Origen y Geografía", "content": "Tradicionalmente producido en el Noroeste Argentino (NOA)." },
+      { "title": "Perfil Sensorial", "content": "Picor moderado con notas dulces, frutales y un ahumado natural." },
+      { "title": "Usos comunes", "content": "Indispensable en el chimichurri, rellenos de empanadas, locros y para saborizar aceites de acabado en parrilla." }
     ]
   },
   {
@@ -27,18 +18,9 @@
     "category": "aromatico",
     "introduction": "Fruto del Illicium verum con alto contenido de anetol.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Nativo del sur de China y el norte de Vietnam."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Sabor licoroso, intensamente dulce y anisado."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Base del Polvo de 5 Especias, infusiones y caldos largos."
-      }
+      { "title": "Origen y Geografía", "content": "Nativo del sur de China y el norte de Vietnam." },
+      { "title": "Perfil Sensorial", "content": "Sabor licoroso, intensamente dulce y anisado." },
+      { "title": "Usos comunes", "content": "Base del Polvo de 5 Especias, infusiones y caldos largos." }
     ]
   },
   {
@@ -48,18 +30,9 @@
     "category": "mezcla",
     "introduction": "Mezcla maestra de especias del Levante y el Magreb.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Utilizada en todo el Medio Oriente."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Equilibrio cálido-picante con notas de canela y pimienta."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Marinados de cordero, guisos de legumbres y arroces pilaf."
-      }
+      { "title": "Origen y Geografía", "content": "Utilizada en todo el Medio Oriente." },
+      { "title": "Perfil Sensorial", "content": "Equilibrio cálido-picante con notas de canela y pimienta." },
+      { "title": "Usos comunes", "content": "Marinados de cordero, guisos de legumbres y arroces pilaf." }
     ]
   },
   {
@@ -69,18 +42,9 @@
     "category": "dulce",
     "introduction": "Corteza interna del Cinnamomum verum.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "La variedad Ceilán es originaria de Sri Lanka."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Cálida, dulce y amaderada."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Postres, pero también en platos salados como tajines."
-      }
+      { "title": "Origen y Geografía", "content": "La variedad Ceilán es originaria de Sri Lanka." },
+      { "title": "Perfil Sensorial", "content": "Cálida, dulce y amaderada." },
+      { "title": "Usos comunes", "content": "Postres, pero también en platos salados como tajines." }
     ]
   },
   {
@@ -90,18 +54,9 @@
     "category": "herbal",
     "introduction": "Semilla altamente aromática de la familia de las zingiberáceas.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Nativo del sur de la India y Guatemala."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Notas cítricas, alcanforadas y de eucalipto."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Café árabe, arroces basmati y repostería fina."
-      }
+      { "title": "Origen y Geografía", "content": "Nativo del sur de la India y Guatemala." },
+      { "title": "Perfil Sensorial", "content": "Notas cítricas, alcanforadas y de eucalipto." },
+      { "title": "Usos comunes", "content": "Café árabe, arroces basmati y repostería fina." }
     ]
   },
   {
@@ -111,39 +66,9 @@
     "category": "picante",
     "introduction": "Chile en polvo con pungencia directa.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Guayana Francesa."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Picor punzante que actúa rápido en el paladar."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Salsas picantes y potenciador de calor en mariscos."
-      }
-    ]
-  },
-  {
-    "id": "spice_cilantro",
-    "title": "Cilantro",
-    "flag": "🌍",
-    "category": "herbal",
-    "introduction": "Hierba fundamental conocida como culantro o kuratũ.",
-    "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Nativo del Mediterráneo y el Cáucaso."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Hojas cítricas y vibrantes; semillas amaderadas y dulces."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Ceviches, guacamole, currys y adobos tradicionales."
-      }
+      { "title": "Origen y Geografía", "content": "Guayana Francesa." },
+      { "title": "Perfil Sensorial", "content": "Picor punzante que actúa rápido en el paladar." },
+      { "title": "Usos comunes", "content": "Salsas picantes y potenciador de calor en mariscos." }
     ]
   },
   {
@@ -153,18 +78,9 @@
     "category": "dulce",
     "introduction": "Botones florales secos muy concentrados.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Islas Molucas (Indonesia)."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Aroma penetrante y sensación levemente anestésica."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Fondos de carne, conservas dulces y charcutería."
-      }
+      { "title": "Origen y Geografía", "content": "Islas Molucas (Indonesia)." },
+      { "title": "Perfil Sensorial", "content": "Aroma penetrante y sensación levemente anestésica." },
+      { "title": "Usos comunes", "content": "Fondos de carne, conservas dulces y charcutería." }
     ]
   },
   {
@@ -174,18 +90,9 @@
     "category": "picante",
     "introduction": "Semilla seca de Cuminum cyminum, pilar de la cocina terrosa.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Cuenca del Mediterráneo y Asia Central."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Sabor fuerte, terroso y persistente."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Empanadas criollas, humitas, currys y conservante natural."
-      }
+      { "title": "Origen y Geografía", "content": "Cuenca del Mediterráneo y Asia Central." },
+      { "title": "Perfil Sensorial", "content": "Sabor fuerte, terroso y persistente." },
+      { "title": "Usos comunes", "content": "Empanadas criollas, humitas, currys y conservante natural." }
     ]
   },
   {
@@ -195,18 +102,9 @@
     "category": "herbal",
     "introduction": "Semilla desecada con perfil cítrico.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Cáucaso y Mediterráneo."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Notas de limón y salvia."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Mezclas de especias y marinadas de carnes blancas."
-      }
+      { "title": "Origen y Geografía", "content": "Cáucaso y Mediterráneo." },
+      { "title": "Perfil Sensorial", "content": "Notas de limón y salvia." },
+      { "title": "Usos comunes", "content": "Mezclas de especias y marinadas de carnes blancas." }
     ]
   },
   {
@@ -216,18 +114,9 @@
     "category": "mezcla",
     "introduction": "Mezcla de especias pulverizadas representativa de la India.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Sur de la India (Tamil Nadu)."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Perfil complejo dominado por la cúrcuma."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Estofados de vegetales y carnes."
-      }
+      { "title": "Origen y Geografía", "content": "Sur de la India (Tamil Nadu)." },
+      { "title": "Perfil Sensorial", "content": "Perfil complejo dominado por la cúrcuma." },
+      { "title": "Usos comunes", "content": "Estofados de vegetales y carnes." }
     ]
   },
   {
@@ -237,18 +126,9 @@
     "category": "mezcla",
     "introduction": "Mezcla reconfortante del norte de la India.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Norte de la India y Pakistán."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Dulce, cálido y menos picante que el curry."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Finalización de platos para preservar aromas volátiles."
-      }
+      { "title": "Origen y Geografía", "content": "Norte de la India y Pakistán." },
+      { "title": "Perfil Sensorial", "content": "Dulce, cálido y menos picante que el curry." },
+      { "title": "Usos comunes", "content": "Finalización de platos para preservar aromas volátiles." }
     ]
   },
   {
@@ -258,18 +138,9 @@
     "category": "herbal",
     "introduction": "Rizoma articulado con picor fresco.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Sudeste asiático e India."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Picante, cítrico y refrescante."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Salteados, marinadas y galletas."
-      }
+      { "title": "Origen y Geografía", "content": "Sudeste asiático e India." },
+      { "title": "Perfil Sensorial", "content": "Picante, cítrico y refrescante." },
+      { "title": "Usos comunes", "content": "Salteados, marinadas y galletas." }
     ]
   },
   {
@@ -279,18 +150,9 @@
     "category": "picante",
     "introduction": "Chile rojo vibrante de baja pungencia.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Región de Cachemira."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Mucho color rojo y un picante muy sutil."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Platos estéticos como el Rogan Josh."
-      }
+      { "title": "Origen y Geografía", "content": "Región de Cachemira." },
+      { "title": "Perfil Sensorial", "content": "Mucho color rojo y un picante muy sutil." },
+      { "title": "Usos comunes", "content": "Platos estéticos como el Rogan Josh." }
     ]
   },
   {
@@ -300,18 +162,9 @@
     "category": "picante",
     "introduction": "Ají 'cacho de cabra' ahumado y molido.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Territorio Mapuche, Chile."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Ahumado profundo con notas de tierra."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Aceites de oliva, papas asadas y pescados."
-      }
+      { "title": "Origen y Geografía", "content": "Territorio Mapuche, Chile." },
+      { "title": "Perfil Sensorial", "content": "Ahumado profundo con notas de tierra." },
+      { "title": "Usos comunes", "content": "Aceites de oliva, papas asadas y pescados." }
     ]
   },
   {
@@ -321,18 +174,9 @@
     "category": "dulce",
     "introduction": "Pimiento rojo seco y molido.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Hungría y España."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Sabor dulce con aroma tostado."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Goulash y colorante natural en guisos."
-      }
+      { "title": "Origen y Geografía", "content": "Hungría y España." },
+      { "title": "Perfil Sensorial", "content": "Sabor dulce con aroma tostado." },
+      { "title": "Usos comunes", "content": "Goulash y colorante natural en guisos." }
     ]
   },
   {
@@ -342,60 +186,9 @@
     "category": "picante",
     "introduction": "Semilla de Piper nigrum sin pericarpio.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Vietnam e Indonesia."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Picante agudo pero menos complejo."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Salsas claras (bechamel) y purés."
-      }
-    ]
-  },
-  {
-    "id": "spice_pimienta_negra",
-    "title": "Pimienta Negra",
-    "flag": "🇮🇳",
-    "category": "picante",
-    "introduction": "Reina de las Especias. Fruto inmaduro fermentado.",
-    "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Costa de Malabar, India."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Amaderado, cítrico y punzante (piperina)."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Universal. Potenciador de sabor en toda preparación."
-      }
-    ]
-  },
-  {
-    "id": "spice_pimienta_rosa",
-    "title": "Pimienta Rosa",
-    "flag": "🇧🇷",
-    "category": "aromatico",
-    "introduction": "Falsa pimienta (Schinus terebinthifolius).",
-    "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Nativa de Brasil y Argentina."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Dulce, frutal y resinosa. Sin picor."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Pescados delicados y coctelería."
-      }
+      { "title": "Origen y Geografía", "content": "Vietnam e Indonesia." },
+      { "title": "Perfil Sensorial", "content": "Picante agudo pero menos complejo." },
+      { "title": "Usos comunes", "content": "Salsas claras (bechamel) y purés." }
     ]
   },
   {
@@ -405,18 +198,9 @@
     "category": "mezcla",
     "introduction": "'Lo mejor de la tienda' marroquí.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Marruecos."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Complejo, floral y especiado."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Tajines y carnes a la brasa."
-      }
+      { "title": "Origen y Geografía", "content": "Marruecos." },
+      { "title": "Perfil Sensorial", "content": "Complejo, floral y especiado." },
+      { "title": "Usos comunes", "content": "Tajines y carnes a la brasa." }
     ]
   },
   {
@@ -426,18 +210,9 @@
     "category": "picante",
     "introduction": "Siete sabores japoneses.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Japón."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Contraste entre el picante, el cítrico y el alga."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Ramen y carnes asadas."
-      }
+      { "title": "Origen y Geografía", "content": "Japón." },
+      { "title": "Perfil Sensorial", "content": "Contraste entre el picante, el cítrico y el alga." },
+      { "title": "Usos comunes", "content": "Ramen y carnes asadas." }
     ]
   },
   {
@@ -447,18 +222,9 @@
     "category": "aromatico",
     "introduction": "Polvo granate obtenido de las bayas de Rhus coriaria.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Mediterráneo y Oriente Medio."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Ácido, vibrante y frutal, similar al limón."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Hummus, ensaladas tipo Fattoush y adobo de pollos."
-      }
+      { "title": "Origen y Geografía", "content": "Mediterráneo y Oriente Medio." },
+      { "title": "Perfil Sensorial", "content": "Ácido, vibrante y frutal, similar al limón." },
+      { "title": "Usos comunes", "content": "Hummus, ensaladas tipo Fattoush y adobo de pollos." }
     ]
   },
   {
@@ -468,18 +234,9 @@
     "category": "mezcla",
     "introduction": "Pasta de sésamo procesado.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Medio Oriente."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Sabor intenso a nuez tostada."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Base de Hummus y salsas de falafel."
-      }
+      { "title": "Origen y Geografía", "content": "Medio Oriente." },
+      { "title": "Perfil Sensorial", "content": "Sabor intenso a nuez tostada." },
+      { "title": "Usos comunes", "content": "Base de Hummus y salsas de falafel." }
     ]
   },
   {
@@ -489,116 +246,69 @@
     "category": "mezcla",
     "introduction": "Mezcla de hierbas y sésamo.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Líbano, Siria y Palestina."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Herbal, ácido y con la textura del sésamo."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Con aceite sobre pan plano."
-      }
+      { "title": "Origen y Geografía", "content": "Líbano, Siria y Palestina." },
+      { "title": "Perfil Sensorial", "content": "Herbal, ácido y con la textura del sésamo." },
+      { "title": "Usos comunes", "content": "Con aceite sobre pan plano." }
     ]
   },
   {
-    "id": "spice_pimienta_negra",
+    "id": "spice_pimienta_negra_det",
     "title": "Pimienta Negra",
     "flag": "🇮🇳",
     "category": "picante",
     "introduction": "Considerada la 'Reina de las Especias', es el fruto seco e inmaduro de la planta Piper nigrum. Es el motor aromático de la cocina mundial.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Originaria de la costa de Malabar en la India. Actualmente, Vietnam es el principal productor, seguido por Brasil e Indonesia, ofreciendo variedades con distintos matices según el suelo."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Aroma amaderado, cítrico y punzante. Su picor proviene de la piperina. Al ser un fruto inmaduro fermentado, desarrolla una complejidad que se potencia si se muele al momento de usar."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Condimento universal. La Negra es la más aromática para carnes y guisos. Diferencia culinaria: la Blanca (fruto maduro sin piel) es más picante y discreta en salsas claras; la Verde (en salmuera) es fresca y frutal. Clave incluso en pastelería para realzar el chocolate."
-      }
+      { "title": "Origen y Geografía", "content": "Originaria de la costa de Malabar en la India. Actualmente, Vietnam es el principal productor, seguido por Brasil e Indonesia." },
+      { "title": "Perfil Sensorial", "content": "Aroma amaderado, cítrico y punzante. Su picor proviene de la piperina." },
+      { "title": "Usos comunes", "content": "Condimento universal. La Negra es la más aromática para carnes y guisos." }
     ]
   },
   {
-    "id": "spice_cilantro",
+    "id": "spice_cilantro_det",
     "title": "Cilantro",
     "flag": "🌍",
     "category": "herbal",
-    "introduction": "Hierba fundamental en la gastronomía global, conocida como culantro o kuratũ. Se aprovechan tanto sus hojas frescas como sus semillas (coriandro), ofreciendo perfiles aromáticos totalmente distintos.",
+    "introduction": "Hierba fundamental en la gastronomía global, conocida como culantro o kuratũ. Se aprovechan tanto sus hojas frescas como sus semillas (coriandro).",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Nativo del Mediterráneo y el Cáucaso. Su uso es masivo en América Latina (desde el pebre chileno hasta el guacamole mexicano), el Sudeste Asiático y las Islas Canarias, donde es base de los mojos verdes."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Las hojas frescas poseen un aroma cítrico, penetrante y vibrante; son volátiles y pierden su esencia al secarse o congelarse. Las semillas (granos) tienen un perfil amaderado, dulce y alimonado que se intensifica con el tostado."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Ingrediente esencial en chutneys, ceviches y sopas (añadido al final para preservar aroma). En Paraguay y Colombia se emplea en embutidos, adobos para cordero y purés de aguacate. Sus semillas son clave en la fabricación de cerveza artesanal, conservas en vinagre y mezclas de curry. Un adobo técnico tradicional combina cilantro, comino y vinagre para la conservación de carnes."
-      }
+      { "title": "Origen y Geografía", "content": "Nativo del Mediterráneo y el Cáucaso. Su uso es masivo en América Latina, el Sudeste Asiático y las Islas Canarias." },
+      { "title": "Perfil Sensorial", "content": "Hojas frescas con aroma cítrico y vibrante. Semillas con perfil amaderado y alimonado." },
+      { "title": "Usos comunes", "content": "Esencial en ceviches, sopas y adobos. Sus semillas son clave en cervezas artesanales." }
     ]
   },
   {
-    "id": "spice_pimienta_rosa",
+    "id": "spice_pimienta_rosa_det",
     "title": "Pimienta Rosa",
     "flag": "🇦🇷🇧🇷",
     "category": "aromatico",
-    "introduction": "Bayas secas de los árboles Schinus molle (Aguaribay) y Schinus terebinthifolius (Turbinto). No son pimientas auténticas, sino drupas de la familia Anacardiaceae.",
+    "introduction": "Bayas secas de los árboles Schinus molle (Aguaribay) y Schinus terebinthifolius (Turbinto).",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "El Aguaribay es nativo de la región andina y el Cono Sur (Argentina/Perú), mientras que el Turbinto proviene del área subtropical de Brasil. Ambos se han naturalizado globalmente como 'falsos pimenteros' por la similitud de su fruto con la pimienta negra."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Aroma resinoso, dulce y cítrico. El Aguaribay tiende a ser más rústico y levemente picante, con notas que recuerdan al pino. El Turbinto es más delicado, frutal y estético. Ninguna posee piperina; su carácter es puramente aromático y volátil."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Indispensable en la 'Pimienta de las 4 estaciones'. Por su fragilidad, se usa entera o apenas machacada en carpaccios, pescados blancos y coctelería premium (Gin Tonic). Nota técnica: Su alto contenido en aceites esenciales requiere que no se someta a cocciones prolongadas para evitar que el sabor resinoso se torne amargo."
-      }
+      { "title": "Origen y Geografía", "content": "El Aguaribay es nativo de la región andina y el Cono Sur (Argentina/Perú), mientras que el Turbinto proviene de Brasil." },
+      { "title": "Perfil Sensorial", "content": "Aroma resinoso, dulce y cítrico. El Aguaribay tiende a ser más rústico y levemente picante." },
+      { "title": "Usos comunes", "content": "Indispensable en carpaccios, pescados blancos y coctelería premium." }
     ]
-  }
-  ,
+  },
   {
     "id": "spice_curcuma",
     "title": "Cúrcuma",
     "flag": "🇮🇳",
     "category": "aromatico",
-    "introduction": "Rizoma desecado y pulverizado de la Curcuma longa, valorado por su capacidad colorante y propiedades conservantes.",
+    "introduction": "Rizoma desecado y pulverizado de la Curcuma longa, valorado por su capacidad colorante.",
     "sections": [
-      {
-        "title": "Origen y Geografía",
-        "content": "Nativa del sudeste asiático, principalmente de la India, donde se produce la mayor parte del suministro global de alta calidad."
-      },
-      {
-        "title": "Perfil Sensorial",
-        "content": "Aroma terroso y ligeramente amargo con notas de almizcle. Aporta un color amarillo vibrante debido a la presencia de curcumina."
-      },
-      {
-        "title": "Usos comunes",
-        "content": "Componente esencial de currys, chutneys y arroces. En tu recetario, es clave para la estabilidad y el color del Chutney de Duraznos."
-      }
+      { "title": "Origen y Geografía", "content": "Nativa del sudeste asiático, principalmente de la India." },
+      { "title": "Perfil Sensorial", "content": "Aroma terroso y ligeramente amargo con notas de almizcle." },
+      { "title": "Usos comunes", "content": "Componente esencial de currys y clave para el color del Chutney de Duraznos." }
+    ]
+  },
+  {
+    "id": "spice_locoto",
+    "title": "Locoto / Rocoto",
+    "flag": "🇧🇴",
+    "category": "picante",
+    "introduction": "Fruto del Capsicum pubescens, conocido por su picor intenso y sus semillas negras únicas.",
+    "sections": [
+      { "title": "Origen y Geografía", "content": "Nativo de las regiones andinas de Bolivia y Perú." },
+      { "title": "Perfil Sensorial", "content": "Picor punzante y fresco con notas frutales, muy superior al ají común." },
+      { "title": "Usos comunes", "content": "Fundamental en la salsa Yasgua de tus empanadas de osobuco." }
     ]
   }
-]
-{
-  "id": "spice_locoto",
-  "title": "Locoto / Rocoto",
-  "flag": "🇧🇴",
-  "category": "picante",
-  "introduction": "Fruto del Capsicum pubescens, conocido por su picor intenso y sus semillas negras únicas.",
-  "sections": [
-    { "title": "Origen y Geografía", "content": "Nativo de las regiones andinas de Bolivia y Perú." },
-    { "title": "Perfil Sensorial", "content": "Picor punzante y fresco con notas frutales, muy superior al ají común." },
-    { "title": "Usos comunes", "content": "Fundamental en la salsa Yasgua de tus empanadas de osobuco." }
-  ]
-}
 ]
