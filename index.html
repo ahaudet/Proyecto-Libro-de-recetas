@@ -73,7 +73,7 @@
         document.getElementById('view-home').classList.remove('hidden');
     };
 
-    window.filterBy = function(cat) {
+  window.filterBy = function(cat) {
         document.getElementById('view-home').classList.add('hidden');
         document.getElementById('view-list').style.display = 'block';
         const res = document.getElementById('recipe-results');
@@ -83,8 +83,13 @@
         
         filtered.forEach(r => {
             const ing = Array.isArray(r.ingredients) ? r.ingredients : [];
+            
+            // --- LÓGICA DE IMAGEN AÑADIDA AQUÍ ---
+            const imgTag = r.image ? `<img src="${r.image}" alt="${r.title}" style="width:100%; max-height:300px; object-fit:cover; border-radius:8px; margin-bottom:15px; display:block;">` : '';
+
             res.insertAdjacentHTML('beforeend', `
                 <article class="recipe-card">
+                    ${imgTag} 
                     <h2 class="recipe-title">${r.title}</h2>
                     <p><strong>Tiempo total:</strong> ${r.totalTime || 'N/A'}</p>
                     <button class="accordion-title" onclick="window.toggleAcc(this)">Ingredientes ▼</button>
