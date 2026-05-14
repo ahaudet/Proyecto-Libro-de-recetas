@@ -71,7 +71,7 @@
   {
     "id": "receta_1759168688190",
     "title": "Dulce de membrillo light al microondas",
-    "image": "fotos-receta/dulce-membrillo.png",
+    "image": "fotos-receta/dulce-membrillo-light.png",
     "category": "Dulces/Mermeladas",
     "prepTime": "10 minutos",
     "cookTime": "15 + 20 minutos",
@@ -114,7 +114,7 @@
     "id": "receta_1759169565310",
     "title": "Dip de remolachas",
     "category": "Dips",
-    "image": "fotos-receta/dip-remolacha.png",
+    "image": "fotos-receta/dip-remolachas.png",
     "ingredients": ["Remolacha: 1 lata o 1 unidad si está cruda", "Ajo: 1 diente", "Sal pimienta pimentón dulce y ají molido: a gusto", "Jugo de limón y aceite de oliva c/n"],
     "instructions": "Poner todos los ingredientes en una procesadora o en un bol y mixear hasta lograr la textura deseada. Corregir sazón si es necesario.",
     "authorComments": "Para servir podés agregarle por encima cualquier topping: frutos secos picados o cilantro picado. Un chorrito de yogur natural también puede ser.\nTip: ideal para dipear con bastoncitos de zanahorias.\n"
@@ -198,7 +198,7 @@
     "id": "1762860677285",
     "title": "Muhamara",
     "category": "Dips",
-    "image": "fotos-receta/muhamara.png",
+    "image": "fotos-receta/Muhamara.png",
     "ingredients": ["3 pimientos rojos", "1 cabeza de ajo", "4 cdas de aceite de oliva", "100 g de nueces", "1 cda de pimentón dulce", "sal a gusto", "2 cdas de pasta de tomate", "1/2 taza de pan rallado (opcional)"],
     "instructions": "Cortar la parte superior de la cabeza de ajo y la colocamos en un papel aluminio con aceite. Llevar al horno junto con los pimientos hasta que estén tiernos. Pelar los ajos y los pimientos, poner todo en una procesadora y procesar hasta formar una pasta no muy suave.",
     "authorComments": ""
@@ -255,7 +255,7 @@
     "id": "1776870448795",
     "title": "Dip de Berenjenas Asadas",
     "category": "Dips",
-    "image": "fotos-receta/dip-berenjenas-asadas.png",
+    "image": "fotos-receta/dip-berenjenas.png",
     "ingredients": ["2 berenjenas", "2 tomates", "1 morrón rojo", "1 cebolla morada", "2 o 3 dientes de ajo", "Aceite de oliva", "Comino, pimentón y ají molido"],
     "instructions": "Cortar vegetales en pedazos grandes. Hornear 15 min a 230°C. Condimentar y hornear 20 min más. Procesar apenas para lograr una textura rústica.",
     "authorComments": "La textura debe ser rústica, no una pasta lisa. Ideal con pan tostado."
@@ -264,7 +264,7 @@
     "id": "1776871717021",
     "title": "Babaganush (Mutabal)",
     "category": "Dips",
-    "image": "fotos-receta/babaganush-tradicional.png",
+    "image": "fotos-receta/mutabal.png",
     "ingredients": ["2 berenjenas grandes", "2 cdas de Tahini", "2 dientes de ajo", "Jugo de 1/2 limón", "1/2 cdita de Comino", "AOVE", "Sal y pimienta"],
     "instructions": "1. Asar las berenjenas sobre llama directa hasta quemar la piel. \n2. Pelar y retirar exceso de líquido. \n3. Mezclar con tahini, ajo, limón y especias. \n4. Procesar hasta obtener pasta con textura.",
     "authorComments": "El secreto es el ahumado de la berenjena sobre la hornalla."
@@ -302,7 +302,7 @@
   {
     "id": "1777569778899",
     "title": "ZA'ALUK (Ensalada Rústica de Berenjenas)",
-    "category": "Entradas",
+    "category": "Dips",
     "image": "fotos-receta/ensalada-berenjena-rustica.png",
     "ingredients": ["2 berenjenas", "2 tomates", "1 morrón rojo", "1 cebolla morada", "Ajo", "AOVE", "Comino, pimentón y ají molido"],
     "instructions": "1. Hornear vegetales en trozos grandes a 230°C por 15 min. \n2. Condimentar y hornear 20 min adicionales hasta dorar.\n3. Procesar levemente conservando textura rústica.",
@@ -312,7 +312,7 @@
     "id": "1777572331608",
     "title": "Dulce de Membrillo Rápido",
     "category": "Dulces",
-    "image": "fotos-receta/membrillo-rapido.png",
+    "image": "fotos-receta/dulce-membrillo.png",
     "ingredients": ["1 kg de membrillos", "800 g de azúcar", "El zumo de un limón"],
     "instructions": "Cortar membrillos sin pelar (por la pectina). Mezclar con azúcar y limón. Cocinar en microondas en ciclos de 5 min hasta que esté ambarino. Triturar y dejar solidificar.",
     "authorComments": "El uso del microondas optimiza los tiempos de cocción tradicionales."
@@ -320,8 +320,8 @@
   {
     "id": "1777572682542",
     "title": "Membrillos en Cascos al Vino Tinto",
-    "category": "Dulces",
-    "image": "fotos-receta/membrillos-vino.png",
+    "category": "Postres",
+    "image": "fotos-receta/membrillos-vino-tinto.png",
     "ingredients": ["1 kg de cascos de membrillo", "1 taza de azúcar", "1 taza de agua", "1 taza de vino tinto"],
     "instructions": "Limpiar membrillos en cascos. Combinar azúcar, agua y vino tinto. Cocinar a fuego moderado hasta que la fruta esté tierna y el almíbar reducido.",
     "authorComments": "Realizar un tratamiento térmico de los frascos cerrados para conservación prolongada."
